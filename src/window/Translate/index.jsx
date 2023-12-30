@@ -221,7 +221,7 @@ export default function Translate() {
                         size='sm'
                         variant='flat'
                         disableAnimation
-                        className='my-auto bg-transparent'
+                        className='my-auto bg-transparent top-0.5 left-0.5'
                         onPress={() => {
                             if (pined) {
                                 if (closeOnBlur) {
@@ -250,7 +250,7 @@ export default function Translate() {
                         <AiFillCloseCircle className='text-[20px] text-default-400' />
                     </Button>
                 </div>
-                <div className={`${osType === 'Linux' ? 'h-[calc(100vh-37px)]' : 'h-[calc(100vh-35px)]'} px-[8px]`}>
+                <div className={`${osType === 'Linux' ? 'h-[calc(100vh-37px)]' : 'h-[calc(100vh-35px)]'} px-[12px]`}>
                     <div className='h-full overflow-y-auto'>
                         <div className={`${hideSource && 'hidden'}`}>
                             <SourceArea pluginList={pluginList} />

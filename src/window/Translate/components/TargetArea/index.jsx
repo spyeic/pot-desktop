@@ -313,12 +313,12 @@ export default function TargetArea(props) {
     return (
         <Card
             shadow='none'
-            className='rounded-[10px]'
+            className='rounded-[6px]'
         >
             <Toaster />
             <CardHeader
                 className={`flex justify-between py-1 px-0 bg-content2 h-[30px] ${
-                    hide ? 'rounded-[10px]' : 'rounded-t-[10px]'
+                    hide ? 'rounded-[6px]' : 'rounded-t-[6px]'
                 }`}
                 {...drag}
             >

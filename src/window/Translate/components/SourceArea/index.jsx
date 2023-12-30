@@ -241,7 +241,7 @@ export default function SourceArea(props) {
     return (
         <Card
             shadow='none'
-            className='bg-content1 rounded-[10px] mt-[1px] pb-0'
+            className='bg-content1 rounded-[6px] mt-[1px] pb-0'
         >
             <Toaster />
             <CardBody className='bg-content1 p-[12px] pb-0 max-h-[40vh] overflow-y-auto'>
@@ -269,7 +269,7 @@ export default function SourceArea(props) {
                 />
             </CardBody>
 
-            <CardFooter className='bg-content1 rounded-none rounded-b-[10px] flex justify-between px-[12px] p-[5px]'>
+            <CardFooter className='bg-content1 rounded-none rounded-b-[6px] flex justify-between px-[12px] p-[5px]'>
                 <div className='flex justify-start'>
                     <ButtonGroup className='mr-[5px]'>
                         <Tooltip content={t('translate.speak')}>
