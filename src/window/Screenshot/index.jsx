@@ -6,6 +6,7 @@ import { appWindow } from '@tauri-apps/api/window';
 import { emit } from '@tauri-apps/api/event';
 import { warn } from 'tauri-plugin-log-api';
 import { invoke } from '@tauri-apps/api';
+import { osType } from '../../utils/env.js';
 
 export default function Screenshot() {
     const [imgurl, setImgurl] = useState('');
@@ -30,7 +31,7 @@ export default function Screenshot() {
             });
         });
     }, []);
-
+    console.log(osType)
     return (
         <>
             <img
@@ -38,6 +39,7 @@ export default function Screenshot() {
                 className='fixed top-0 left-0 w-full select-none'
                 src={imgurl}
                 draggable={false}
+                style={osType === 'Windows_NT' ? { imageRendering: 'pixelated' } : {}}
                 onLoad={() => {
                     if (imgurl !== '' && imgRef.current.complete) {
                         void appWindow.show();
