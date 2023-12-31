@@ -221,7 +221,7 @@ export default function Translate() {
                         size='sm'
                         variant='flat'
                         disableAnimation
-                        className='my-auto bg-transparent top-0.5 left-0.5'
+                        className='my-auto bg-transparent top-[3px] left-[5px]'
                         onPress={() => {
                             if (pined) {
                                 if (closeOnBlur) {
@@ -242,7 +242,7 @@ export default function Translate() {
                         size='sm'
                         variant='flat'
                         disableAnimation
-                        className={`my-auto ${osType === 'Darwin' && 'hidden'} bg-transparent`}
+                        className={`my-auto ${osType === 'Darwin' && 'hidden'} bg-transparent top-[3px] right-[5px]`}
                         onPress={() => {
                             void appWindow.close();
                         }}
