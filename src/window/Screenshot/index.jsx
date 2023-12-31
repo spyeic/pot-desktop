@@ -31,7 +31,6 @@ export default function Screenshot() {
             });
         });
     }, []);
-    console.log(osType)
     return (
         <>
             <img
