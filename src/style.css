@@ -24,3 +24,7 @@ html {
 *::-webkit-scrollbar-thumb:hover {
     background: #c0c1c550;
 }
+
+.translate-ui::-webkit-scrollbar {
+    width: 0;
+}
